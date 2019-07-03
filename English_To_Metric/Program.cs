@@ -16,7 +16,7 @@ namespace English_To_Metric
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new grmEnglishToMetric());
+            Application.Run(new frmEnglishToMetric());
         }
     }
 }

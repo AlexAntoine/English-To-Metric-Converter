@@ -1,6 +1,6 @@
 ﻿namespace English_To_Metric
 {
-    partial class grmEnglishToMetric
+    partial class frmEnglishToMetric
     {
         /// <summary>
         /// Required designer variable.
@@ -30,25 +30,25 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.grpEnglishToMetric = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.grpMetricToEnglish = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.btnMetricClear = new System.Windows.Forms.Button();
-            this.btnEnglish = new System.Windows.Forms.Button();
-            this.lblEMiles = new System.Windows.Forms.Label();
-            this.lblYards = new System.Windows.Forms.Label();
-            this.lblEFeet = new System.Windows.Forms.Label();
             this.lblInches = new System.Windows.Forms.Label();
-            this.lblMeters = new System.Windows.Forms.Label();
-            this.lblKilometers = new System.Windows.Forms.Label();
+            this.lblEFeet = new System.Windows.Forms.Label();
+            this.lblYards = new System.Windows.Forms.Label();
+            this.lblEMiles = new System.Windows.Forms.Label();
+            this.btnEnglish = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.grpMetricToEnglish = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblKilometers = new System.Windows.Forms.Label();
+            this.lblMeters = new System.Windows.Forms.Label();
+            this.btnMetricClear = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.optEnglishToMetric = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.optMetricToEnglish = new System.Windows.Forms.RadioButton();
             this.btnConvert = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.grpEnglishToMetric.SuspendLayout();
@@ -82,20 +82,60 @@
             this.grpEnglishToMetric.TabIndex = 1;
             this.grpEnglishToMetric.TabStop = false;
             this.grpEnglishToMetric.Text = "English";
+            this.grpEnglishToMetric.Visible = false;
+            this.grpEnglishToMetric.Enter += new System.EventHandler(this.grpEnglishToMetric_Enter);
             // 
-            // textBox1
+            // lblInches
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 0;
+            this.lblInches.AutoSize = true;
+            this.lblInches.Location = new System.Drawing.Point(255, 143);
+            this.lblInches.Name = "lblInches";
+            this.lblInches.Size = new System.Drawing.Size(57, 20);
+            this.lblInches.TabIndex = 8;
+            this.lblInches.Text = "Inches";
             // 
-            // textBox2
+            // lblEFeet
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 1;
+            this.lblEFeet.AutoSize = true;
+            this.lblEFeet.Location = new System.Drawing.Point(31, 142);
+            this.lblEFeet.Name = "lblEFeet";
+            this.lblEFeet.Size = new System.Drawing.Size(42, 20);
+            this.lblEFeet.TabIndex = 7;
+            this.lblEFeet.Text = "Feet";
+            // 
+            // lblYards
+            // 
+            this.lblYards.AutoSize = true;
+            this.lblYards.Location = new System.Drawing.Point(255, 46);
+            this.lblYards.Name = "lblYards";
+            this.lblYards.Size = new System.Drawing.Size(51, 20);
+            this.lblYards.TabIndex = 6;
+            this.lblYards.Text = "Yards";
+            // 
+            // lblEMiles
+            // 
+            this.lblEMiles.AutoSize = true;
+            this.lblEMiles.Location = new System.Drawing.Point(27, 46);
+            this.lblEMiles.Name = "lblEMiles";
+            this.lblEMiles.Size = new System.Drawing.Size(45, 20);
+            this.lblEMiles.TabIndex = 5;
+            this.lblEMiles.Text = "Miles";
+            // 
+            // btnEnglish
+            // 
+            this.btnEnglish.Location = new System.Drawing.Point(450, 170);
+            this.btnEnglish.Name = "btnEnglish";
+            this.btnEnglish.Size = new System.Drawing.Size(78, 34);
+            this.btnEnglish.TabIndex = 4;
+            this.btnEnglish.Text = "Clear";
+            this.btnEnglish.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(323, 137);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 26);
+            this.textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -104,12 +144,19 @@
             this.textBox3.Size = new System.Drawing.Size(100, 26);
             this.textBox3.TabIndex = 2;
             // 
-            // textBox4
+            // textBox2
             // 
-            this.textBox4.Location = new System.Drawing.Point(323, 137);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 3;
+            this.textBox2.Location = new System.Drawing.Point(93, 137);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(93, 40);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 0;
             // 
             // grpMetricToEnglish
             // 
@@ -122,103 +169,11 @@
             this.grpMetricToEnglish.Controls.Add(this.textBox5);
             this.grpMetricToEnglish.Location = new System.Drawing.Point(633, 216);
             this.grpMetricToEnglish.Name = "grpMetricToEnglish";
-            this.grpMetricToEnglish.Size = new System.Drawing.Size(556, 210);
+            this.grpMetricToEnglish.Size = new System.Drawing.Size(486, 210);
             this.grpMetricToEnglish.TabIndex = 2;
             this.grpMetricToEnglish.TabStop = false;
             this.grpMetricToEnglish.Text = "Metric";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(93, 63);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 0;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(360, 60);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 26);
-            this.textBox6.TabIndex = 1;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(212, 132);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 26);
-            this.textBox7.TabIndex = 2;
-            // 
-            // btnMetricClear
-            // 
-            this.btnMetricClear.Location = new System.Drawing.Point(438, 147);
-            this.btnMetricClear.Name = "btnMetricClear";
-            this.btnMetricClear.Size = new System.Drawing.Size(78, 34);
-            this.btnMetricClear.TabIndex = 3;
-            this.btnMetricClear.Text = "Clear";
-            this.btnMetricClear.UseVisualStyleBackColor = true;
-            // 
-            // btnEnglish
-            // 
-            this.btnEnglish.Location = new System.Drawing.Point(450, 170);
-            this.btnEnglish.Name = "btnEnglish";
-            this.btnEnglish.Size = new System.Drawing.Size(78, 34);
-            this.btnEnglish.TabIndex = 4;
-            this.btnEnglish.Text = "Clear";
-            this.btnEnglish.UseVisualStyleBackColor = true;
-            // 
-            // lblEMiles
-            // 
-            this.lblEMiles.AutoSize = true;
-            this.lblEMiles.Location = new System.Drawing.Point(27, 46);
-            this.lblEMiles.Name = "lblEMiles";
-            this.lblEMiles.Size = new System.Drawing.Size(45, 20);
-            this.lblEMiles.TabIndex = 5;
-            this.lblEMiles.Text = "Miles";
-            // 
-            // lblYards
-            // 
-            this.lblYards.AutoSize = true;
-            this.lblYards.Location = new System.Drawing.Point(255, 46);
-            this.lblYards.Name = "lblYards";
-            this.lblYards.Size = new System.Drawing.Size(51, 20);
-            this.lblYards.TabIndex = 6;
-            this.lblYards.Text = "Yards";
-            // 
-            // lblEFeet
-            // 
-            this.lblEFeet.AutoSize = true;
-            this.lblEFeet.Location = new System.Drawing.Point(31, 142);
-            this.lblEFeet.Name = "lblEFeet";
-            this.lblEFeet.Size = new System.Drawing.Size(42, 20);
-            this.lblEFeet.TabIndex = 7;
-            this.lblEFeet.Text = "Feet";
-            // 
-            // lblInches
-            // 
-            this.lblInches.AutoSize = true;
-            this.lblInches.Location = new System.Drawing.Point(255, 143);
-            this.lblInches.Name = "lblInches";
-            this.lblInches.Size = new System.Drawing.Size(57, 20);
-            this.lblInches.TabIndex = 8;
-            this.lblInches.Text = "Inches";
-            // 
-            // lblMeters
-            // 
-            this.lblMeters.AutoSize = true;
-            this.lblMeters.Location = new System.Drawing.Point(28, 63);
-            this.lblMeters.Name = "lblMeters";
-            this.lblMeters.Size = new System.Drawing.Size(58, 20);
-            this.lblMeters.TabIndex = 4;
-            this.lblMeters.Text = "Meters";
-            // 
-            // lblKilometers
-            // 
-            this.lblKilometers.AutoSize = true;
-            this.lblKilometers.Location = new System.Drawing.Point(261, 63);
-            this.lblKilometers.Name = "lblKilometers";
-            this.lblKilometers.Size = new System.Drawing.Size(83, 20);
-            this.lblKilometers.TabIndex = 5;
-            this.lblKilometers.Text = "Kilometers";
+            this.grpMetricToEnglish.Visible = false;
             // 
             // label2
             // 
@@ -229,29 +184,77 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "centimeters";
             // 
+            // lblKilometers
+            // 
+            this.lblKilometers.AutoSize = true;
+            this.lblKilometers.Location = new System.Drawing.Point(261, 63);
+            this.lblKilometers.Name = "lblKilometers";
+            this.lblKilometers.Size = new System.Drawing.Size(83, 20);
+            this.lblKilometers.TabIndex = 5;
+            this.lblKilometers.Text = "Kilometers";
+            // 
+            // lblMeters
+            // 
+            this.lblMeters.AutoSize = true;
+            this.lblMeters.Location = new System.Drawing.Point(28, 63);
+            this.lblMeters.Name = "lblMeters";
+            this.lblMeters.Size = new System.Drawing.Size(58, 20);
+            this.lblMeters.TabIndex = 4;
+            this.lblMeters.Text = "Meters";
+            // 
+            // btnMetricClear
+            // 
+            this.btnMetricClear.Location = new System.Drawing.Point(382, 170);
+            this.btnMetricClear.Name = "btnMetricClear";
+            this.btnMetricClear.Size = new System.Drawing.Size(78, 34);
+            this.btnMetricClear.TabIndex = 3;
+            this.btnMetricClear.Text = "Clear";
+            this.btnMetricClear.UseVisualStyleBackColor = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(212, 132);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 26);
+            this.textBox7.TabIndex = 2;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(360, 60);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 26);
+            this.textBox6.TabIndex = 1;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(93, 63);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 26);
+            this.textBox5.TabIndex = 0;
+            // 
             // optEnglishToMetric
             // 
             this.optEnglishToMetric.AutoSize = true;
             this.optEnglishToMetric.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optEnglishToMetric.Location = new System.Drawing.Point(222, 156);
+            this.optEnglishToMetric.Location = new System.Drawing.Point(222, 157);
             this.optEnglishToMetric.Name = "optEnglishToMetric";
             this.optEnglishToMetric.Size = new System.Drawing.Size(226, 33);
             this.optEnglishToMetric.TabIndex = 3;
-            this.optEnglishToMetric.TabStop = true;
             this.optEnglishToMetric.Text = "English To Metric";
             this.optEnglishToMetric.UseVisualStyleBackColor = true;
+            this.optEnglishToMetric.CheckedChanged += new System.EventHandler(this.optEnglishToMetric_CheckedChanged);
             // 
-            // radioButton2
+            // optMetricToEnglish
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(791, 156);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(226, 33);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Metric To English";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.optMetricToEnglish.AutoSize = true;
+            this.optMetricToEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optMetricToEnglish.Location = new System.Drawing.Point(798, 156);
+            this.optMetricToEnglish.Name = "optMetricToEnglish";
+            this.optMetricToEnglish.Size = new System.Drawing.Size(226, 33);
+            this.optMetricToEnglish.TabIndex = 4;
+            this.optMetricToEnglish.Text = "Metric To English";
+            this.optMetricToEnglish.UseVisualStyleBackColor = true;
+            this.optMetricToEnglish.CheckedChanged += new System.EventHandler(this.optMetricToEnglish_CheckedChanged);
             // 
             // btnConvert
             // 
@@ -270,21 +273,23 @@
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // grmEnglishToMetric
+            // frmEnglishToMetric
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 581);
+            this.ClientSize = new System.Drawing.Size(1175, 578);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnConvert);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.optMetricToEnglish);
             this.Controls.Add(this.optEnglishToMetric);
             this.Controls.Add(this.grpMetricToEnglish);
             this.Controls.Add(this.grpEnglishToMetric);
             this.Controls.Add(this.lblTitle);
-            this.Name = "grmEnglishToMetric";
+            this.Name = "frmEnglishToMetric";
             this.Text = "English To Metric Converter";
+            this.Load += new System.EventHandler(this.frmEnglishToMetric_Load);
             this.grpEnglishToMetric.ResumeLayout(false);
             this.grpEnglishToMetric.PerformLayout();
             this.grpMetricToEnglish.ResumeLayout(false);
@@ -316,7 +321,7 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.RadioButton optEnglishToMetric;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton optMetricToEnglish;
         private System.Windows.Forms.Button btnConvert;
         private System.Windows.Forms.Button btnExit;
     }

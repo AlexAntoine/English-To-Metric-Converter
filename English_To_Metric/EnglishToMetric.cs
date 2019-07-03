@@ -14,7 +14,6 @@ namespace English_To_Metric
 
         public EnglishToMetric(string userMiles, string userYards, string userFeet, string userInches)
         {
-
             centimeters = milesToYards(int.Parse(userMiles)) + Convert.ToInt16(userFeet);
         }
 
