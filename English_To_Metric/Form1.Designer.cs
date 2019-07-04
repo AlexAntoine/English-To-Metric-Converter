@@ -137,6 +137,7 @@
             this.txtInches.Name = "txtInches";
             this.txtInches.Size = new System.Drawing.Size(100, 26);
             this.txtInches.TabIndex = 3;
+            this.txtInches.TextChanged += new System.EventHandler(this.txtInches_TextChanged);
             // 
             // txtYards
             // 

@@ -55,11 +55,17 @@ namespace English_To_Metric
 
         private void btnConvert_Click(object sender, EventArgs e)
         {
-            EnglishToMetric metric = new EnglishToMetric(txtMiles.Text, txtYards.Text, txtFeet.Text, txtInches.Text);
+            /*EnglishToMetric metric = new EnglishToMetric(txtMiles.Text, txtYards.Text, txtFeet.Text, txtInches.Text);
 
             txtCentimeters.Text = metric.getCentimeters();
             txtMeters.Text = metric.getMeters();
             txtKilometers.Text = metric.getKilometers();
+            */
+
+            MetricToEnglish english = new MetricToEnglish(txtMeters.Text, txtKilometers.Text, txtCentimeters.Text);
+
+            txtInches.Text = english.getInches();
+
 
 
         }
@@ -77,6 +83,11 @@ namespace English_To_Metric
             txtKilometers.Clear();
             txtMeters.Clear();
             txtCentimeters.Clear();
+        }
+
+        private void txtInches_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
