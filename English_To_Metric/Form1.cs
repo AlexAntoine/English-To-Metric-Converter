@@ -63,5 +63,13 @@ namespace English_To_Metric
 
 
         }
+
+        private void btnEnglishClear_Click(object sender, EventArgs e)
+        {
+            txtMiles.Clear();
+            txtFeet.Clear();
+            txtInches.Clear();
+            txtYards.Clear();
+        }
     }
 }

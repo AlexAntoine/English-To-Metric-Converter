@@ -34,7 +34,7 @@
             this.lblEFeet = new System.Windows.Forms.Label();
             this.lblYards = new System.Windows.Forms.Label();
             this.lblEMiles = new System.Windows.Forms.Label();
-            this.btnEnglish = new System.Windows.Forms.Button();
+            this.btnEnglishClear = new System.Windows.Forms.Button();
             this.txtInches = new System.Windows.Forms.TextBox();
             this.txtYards = new System.Windows.Forms.TextBox();
             this.txtFeet = new System.Windows.Forms.TextBox();
@@ -71,7 +71,7 @@
             this.grpEnglishToMetric.Controls.Add(this.lblEFeet);
             this.grpEnglishToMetric.Controls.Add(this.lblYards);
             this.grpEnglishToMetric.Controls.Add(this.lblEMiles);
-            this.grpEnglishToMetric.Controls.Add(this.btnEnglish);
+            this.grpEnglishToMetric.Controls.Add(this.btnEnglishClear);
             this.grpEnglishToMetric.Controls.Add(this.txtInches);
             this.grpEnglishToMetric.Controls.Add(this.txtYards);
             this.grpEnglishToMetric.Controls.Add(this.txtFeet);
@@ -121,14 +121,15 @@
             this.lblEMiles.TabIndex = 5;
             this.lblEMiles.Text = "Miles";
             // 
-            // btnEnglish
+            // btnEnglishClear
             // 
-            this.btnEnglish.Location = new System.Drawing.Point(450, 170);
-            this.btnEnglish.Name = "btnEnglish";
-            this.btnEnglish.Size = new System.Drawing.Size(78, 34);
-            this.btnEnglish.TabIndex = 4;
-            this.btnEnglish.Text = "Clear";
-            this.btnEnglish.UseVisualStyleBackColor = true;
+            this.btnEnglishClear.Location = new System.Drawing.Point(450, 170);
+            this.btnEnglishClear.Name = "btnEnglishClear";
+            this.btnEnglishClear.Size = new System.Drawing.Size(78, 34);
+            this.btnEnglishClear.TabIndex = 4;
+            this.btnEnglishClear.Text = "Clear";
+            this.btnEnglishClear.UseVisualStyleBackColor = true;
+            this.btnEnglishClear.Click += new System.EventHandler(this.btnEnglishClear_Click);
             // 
             // txtInches
             // 
@@ -308,7 +309,7 @@
         private System.Windows.Forms.Label lblEFeet;
         private System.Windows.Forms.Label lblYards;
         private System.Windows.Forms.Label lblEMiles;
-        private System.Windows.Forms.Button btnEnglish;
+        private System.Windows.Forms.Button btnEnglishClear;
         private System.Windows.Forms.TextBox txtInches;
         private System.Windows.Forms.TextBox txtYards;
         private System.Windows.Forms.TextBox txtFeet;
