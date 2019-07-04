@@ -211,6 +211,7 @@
             this.btnMetricClear.TabIndex = 3;
             this.btnMetricClear.Text = "Clear";
             this.btnMetricClear.UseVisualStyleBackColor = true;
+            this.btnMetricClear.Click += new System.EventHandler(this.btnMetricClear_Click);
             // 
             // txtCentimeters
             // 

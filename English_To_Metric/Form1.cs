@@ -71,5 +71,12 @@ namespace English_To_Metric
             txtInches.Clear();
             txtYards.Clear();
         }
+
+        private void btnMetricClear_Click(object sender, EventArgs e)
+        {
+            txtKilometers.Clear();
+            txtMeters.Clear();
+            txtCentimeters.Clear();
+        }
     }
 }
