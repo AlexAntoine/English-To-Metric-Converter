@@ -12,6 +12,8 @@ namespace English_To_Metric
 {
     public partial class frmEnglishToMetric : Form
     {
+       
+
         public frmEnglishToMetric()
         {
             InitializeComponent();
@@ -49,6 +51,17 @@ namespace English_To_Metric
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            EnglishToMetric metric = new EnglishToMetric(txtMiles.Text, txtYards.Text, txtFeet.Text, txtInches.Text);
+
+            txtCentimeters.Text = metric.getCentimeters();
+            txtMeters.Text = metric.getMeters();
+            txtKilometers.Text = metric.getKilometers();
+
+
         }
     }
 }

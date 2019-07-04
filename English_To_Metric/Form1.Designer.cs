@@ -35,18 +35,18 @@
             this.lblYards = new System.Windows.Forms.Label();
             this.lblEMiles = new System.Windows.Forms.Label();
             this.btnEnglish = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInches = new System.Windows.Forms.TextBox();
+            this.txtYards = new System.Windows.Forms.TextBox();
+            this.txtFeet = new System.Windows.Forms.TextBox();
+            this.txtMiles = new System.Windows.Forms.TextBox();
             this.grpMetricToEnglish = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblKilometers = new System.Windows.Forms.Label();
             this.lblMeters = new System.Windows.Forms.Label();
             this.btnMetricClear = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCentimeters = new System.Windows.Forms.TextBox();
+            this.txtKilometers = new System.Windows.Forms.TextBox();
+            this.txtMeters = new System.Windows.Forms.TextBox();
             this.optEnglishToMetric = new System.Windows.Forms.RadioButton();
             this.optMetricToEnglish = new System.Windows.Forms.RadioButton();
             this.btnConvert = new System.Windows.Forms.Button();
@@ -72,10 +72,10 @@
             this.grpEnglishToMetric.Controls.Add(this.lblYards);
             this.grpEnglishToMetric.Controls.Add(this.lblEMiles);
             this.grpEnglishToMetric.Controls.Add(this.btnEnglish);
-            this.grpEnglishToMetric.Controls.Add(this.textBox4);
-            this.grpEnglishToMetric.Controls.Add(this.textBox3);
-            this.grpEnglishToMetric.Controls.Add(this.textBox2);
-            this.grpEnglishToMetric.Controls.Add(this.textBox1);
+            this.grpEnglishToMetric.Controls.Add(this.txtInches);
+            this.grpEnglishToMetric.Controls.Add(this.txtYards);
+            this.grpEnglishToMetric.Controls.Add(this.txtFeet);
+            this.grpEnglishToMetric.Controls.Add(this.txtMiles);
             this.grpEnglishToMetric.Location = new System.Drawing.Point(38, 216);
             this.grpEnglishToMetric.Name = "grpEnglishToMetric";
             this.grpEnglishToMetric.Size = new System.Drawing.Size(534, 210);
@@ -130,33 +130,33 @@
             this.btnEnglish.Text = "Clear";
             this.btnEnglish.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtInches
             // 
-            this.textBox4.Location = new System.Drawing.Point(323, 137);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 3;
+            this.txtInches.Location = new System.Drawing.Point(323, 137);
+            this.txtInches.Name = "txtInches";
+            this.txtInches.Size = new System.Drawing.Size(100, 26);
+            this.txtInches.TabIndex = 3;
             // 
-            // textBox3
+            // txtYards
             // 
-            this.textBox3.Location = new System.Drawing.Point(323, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 2;
+            this.txtYards.Location = new System.Drawing.Point(323, 40);
+            this.txtYards.Name = "txtYards";
+            this.txtYards.Size = new System.Drawing.Size(100, 26);
+            this.txtYards.TabIndex = 2;
             // 
-            // textBox2
+            // txtFeet
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 1;
+            this.txtFeet.Location = new System.Drawing.Point(93, 137);
+            this.txtFeet.Name = "txtFeet";
+            this.txtFeet.Size = new System.Drawing.Size(100, 26);
+            this.txtFeet.TabIndex = 1;
             // 
-            // textBox1
+            // txtMiles
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 0;
+            this.txtMiles.Location = new System.Drawing.Point(93, 46);
+            this.txtMiles.Name = "txtMiles";
+            this.txtMiles.Size = new System.Drawing.Size(100, 26);
+            this.txtMiles.TabIndex = 0;
             // 
             // grpMetricToEnglish
             // 
@@ -164,9 +164,9 @@
             this.grpMetricToEnglish.Controls.Add(this.lblKilometers);
             this.grpMetricToEnglish.Controls.Add(this.lblMeters);
             this.grpMetricToEnglish.Controls.Add(this.btnMetricClear);
-            this.grpMetricToEnglish.Controls.Add(this.textBox7);
-            this.grpMetricToEnglish.Controls.Add(this.textBox6);
-            this.grpMetricToEnglish.Controls.Add(this.textBox5);
+            this.grpMetricToEnglish.Controls.Add(this.txtCentimeters);
+            this.grpMetricToEnglish.Controls.Add(this.txtKilometers);
+            this.grpMetricToEnglish.Controls.Add(this.txtMeters);
             this.grpMetricToEnglish.Location = new System.Drawing.Point(633, 216);
             this.grpMetricToEnglish.Name = "grpMetricToEnglish";
             this.grpMetricToEnglish.Size = new System.Drawing.Size(486, 210);
@@ -211,26 +211,26 @@
             this.btnMetricClear.Text = "Clear";
             this.btnMetricClear.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtCentimeters
             // 
-            this.textBox7.Location = new System.Drawing.Point(212, 132);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 26);
-            this.textBox7.TabIndex = 2;
+            this.txtCentimeters.Location = new System.Drawing.Point(212, 132);
+            this.txtCentimeters.Name = "txtCentimeters";
+            this.txtCentimeters.Size = new System.Drawing.Size(100, 26);
+            this.txtCentimeters.TabIndex = 2;
             // 
-            // textBox6
+            // txtKilometers
             // 
-            this.textBox6.Location = new System.Drawing.Point(360, 60);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 26);
-            this.textBox6.TabIndex = 1;
+            this.txtKilometers.Location = new System.Drawing.Point(360, 60);
+            this.txtKilometers.Name = "txtKilometers";
+            this.txtKilometers.Size = new System.Drawing.Size(100, 26);
+            this.txtKilometers.TabIndex = 1;
             // 
-            // textBox5
+            // txtMeters
             // 
-            this.textBox5.Location = new System.Drawing.Point(93, 63);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 0;
+            this.txtMeters.Location = new System.Drawing.Point(93, 63);
+            this.txtMeters.Name = "txtMeters";
+            this.txtMeters.Size = new System.Drawing.Size(100, 26);
+            this.txtMeters.TabIndex = 0;
             // 
             // optEnglishToMetric
             // 
@@ -264,6 +264,7 @@
             this.btnConvert.TabIndex = 5;
             this.btnConvert.Text = "Convert";
             this.btnConvert.UseVisualStyleBackColor = true;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
             // 
             // btnExit
             // 
@@ -308,18 +309,18 @@
         private System.Windows.Forms.Label lblYards;
         private System.Windows.Forms.Label lblEMiles;
         private System.Windows.Forms.Button btnEnglish;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtInches;
+        private System.Windows.Forms.TextBox txtYards;
+        private System.Windows.Forms.TextBox txtFeet;
+        private System.Windows.Forms.TextBox txtMiles;
         private System.Windows.Forms.GroupBox grpMetricToEnglish;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblKilometers;
         private System.Windows.Forms.Label lblMeters;
         private System.Windows.Forms.Button btnMetricClear;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCentimeters;
+        private System.Windows.Forms.TextBox txtKilometers;
+        private System.Windows.Forms.TextBox txtMeters;
         private System.Windows.Forms.RadioButton optEnglishToMetric;
         private System.Windows.Forms.RadioButton optMetricToEnglish;
         private System.Windows.Forms.Button btnConvert;

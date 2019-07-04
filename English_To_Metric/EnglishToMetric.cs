@@ -8,13 +8,23 @@ namespace English_To_Metric
 {
     class EnglishToMetric
     {
-        private double centimeters;
-        private int meters;
-        private int kilometer;
+        private double _centimeters;
+        private int _meters;
+        private int _kilometer;
 
         public EnglishToMetric(string userMiles, string userYards, string userFeet, string userInches)
         {
-            centimeters = milesToYards(int.Parse(userMiles)) + Convert.ToInt16(userFeet);
+            int totalYards = milesToYards(int.Parse(userMiles)) + Convert.ToInt16(userYards);
+
+            int totalFeet = yardsToFeet(totalYards) + int.Parse(userFeet);
+
+            double totalInches = feetToInches(totalFeet) + int.Parse(userInches);
+
+            _centimeters = inchesToCentimeters(totalInches);
+
+            _meters = centimetersToMeters(_centimeters);
+
+            _kilometer = metersToKilometers(_meters);
         }
 
         public int milesToYards(int miles)
@@ -29,7 +39,37 @@ namespace English_To_Metric
 
         public double feetToInches(int feet)
         {
-            return feet * 2.54;
+            return feet * 12;
+        }
+
+        public double inchesToCentimeters(double inches)
+        {
+            return inches * 2.54;
+        }
+
+        public int centimetersToMeters(double centimeters)
+        {
+            return (int)centimeters / 100;
+        }
+
+        public int metersToKilometers(int meters)
+        {
+            return meters / 1000;
+        }
+
+        public string getCentimeters()
+        {
+            return Convert.ToString(_centimeters);
+        }
+
+        public string getMeters()
+        {
+            return Convert.ToString(_meters);
+        }
+
+        public string getKilometers()
+        {
+            return Convert.ToString(_kilometer);
         }
 
 
