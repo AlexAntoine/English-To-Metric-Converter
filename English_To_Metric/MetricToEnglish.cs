@@ -20,6 +20,12 @@ namespace English_To_Metric
             int centimeters = metersToCentimeters(totalMeters) + int.Parse(userCentimeters);
 
             _inches = centimetersToInches(centimeters);
+
+            _feet = inchesToFeet(_inches);
+
+            _yards = feetToYards(_feet);
+
+            _miles = yardsToFeet(_yards);
         }
 
         public int kilometersToMeters(int kilometers)
@@ -33,12 +39,42 @@ namespace English_To_Metric
         }
         public double centimetersToInches(int centimeters)
         {
-            return (double)centimeters / 2.54;
+            return centimeters / .254;
+        }
+
+        public int inchesToFeet(double inches)
+        {
+            return (int)inches / 12 ;
+        }
+
+        public int feetToYards(int feet)
+        {
+            return feet / 3;
+        }
+
+        public int yardsToFeet(int yards)
+        {
+            return yards / 5280;
         }
 
         public string getInches()
         {
             return Convert.ToString(_inches);
+        }
+
+        public string getFeet()
+        {
+            return Convert.ToString(_feet);
+        }
+
+        public string getYards()
+        {
+            return Convert.ToString(_yards);
+        }
+
+        public string getMiles()
+        {
+            return Convert.ToString(_miles);
         }
     }
 }

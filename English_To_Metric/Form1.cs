@@ -65,8 +65,9 @@ namespace English_To_Metric
             MetricToEnglish english = new MetricToEnglish(txtMeters.Text, txtKilometers.Text, txtCentimeters.Text);
 
             txtInches.Text = english.getInches();
-
-
+            txtFeet.Text = english.getFeet();
+            txtYards.Text = english.getYards();
+            txtMiles.Text = english.getMiles();
 
         }
 
