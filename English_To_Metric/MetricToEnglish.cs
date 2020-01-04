@@ -28,31 +28,34 @@ namespace English_To_Metric
             _miles = yardsToFeet(_yards);
         }
 
-        public int kilometersToMeters(int kilometers)
+        private int kilometersToMeters(int kilometers)
         {
             return kilometers * 100;
         }
 
-        public int metersToCentimeters(int meters)
+        private int metersToCentimeters(int meters)
         {
             return meters * 100;
         }
-        public double centimetersToInches(int centimeters)
+
+        private double centimetersToInches(int centimeters)
         {
-            return centimeters / .254;
+            double totalCentimeter = centimeters / 2.54;
+
+            return double.Parse(totalCentimeter.ToString("#.##"));
         }
 
-        public int inchesToFeet(double inches)
+        private int inchesToFeet(double inches)
         {
-            return (int)inches / 12 ;
+            return (int)inches / 12;
         }
 
-        public int feetToYards(int feet)
+        private int feetToYards(int feet)
         {
             return feet / 3;
         }
 
-        public int yardsToFeet(int yards)
+        private int yardsToFeet(int yards)
         {
             return yards / 5280;
         }

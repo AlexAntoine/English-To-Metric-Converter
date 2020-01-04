@@ -55,20 +55,26 @@ namespace English_To_Metric
 
         private void btnConvert_Click(object sender, EventArgs e)
         {
-            /*EnglishToMetric metric = new EnglishToMetric(txtMiles.Text, txtYards.Text, txtFeet.Text, txtInches.Text);
+            if(optEnglishToMetric.Checked)
+            {
+                EnglishToMetric metric = new EnglishToMetric(txtMiles.Text, txtYards.Text, txtFeet.Text, txtInches.Text);
 
-            txtCentimeters.Text = metric.getCentimeters();
-            txtMeters.Text = metric.getMeters();
-            txtKilometers.Text = metric.getKilometers();
-            */
+                txtCentimeters.Text = metric.getCentimeters();
+                txtMeters.Text = metric.getMeters();
+                txtKilometers.Text = metric.getKilometers();
 
-            MetricToEnglish english = new MetricToEnglish(txtMeters.Text, txtKilometers.Text, txtCentimeters.Text);
+            }
+            else
+            {
+                MetricToEnglish english = new MetricToEnglish(txtMeters.Text, txtKilometers.Text, txtCentimeters.Text);
 
-            txtInches.Text = english.getInches();
-            txtFeet.Text = english.getFeet();
-            txtYards.Text = english.getYards();
-            txtMiles.Text = english.getMiles();
+                txtInches.Text = english.getInches();
+                txtFeet.Text = english.getFeet();
+                txtYards.Text = english.getYards();
+                txtMiles.Text = english.getMiles();
 
+            }
+           
         }
 
         private void btnEnglishClear_Click(object sender, EventArgs e)
