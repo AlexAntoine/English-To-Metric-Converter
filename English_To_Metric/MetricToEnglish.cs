@@ -25,7 +25,7 @@ namespace English_To_Metric
 
             _yards = feetToYards(_feet);
 
-            _miles = yardsToFeet(_yards);
+            _miles = yardsToMiles(_yards);
         }
 
         private int kilometersToMeters(int kilometers)
@@ -35,7 +35,7 @@ namespace English_To_Metric
 
         private int metersToCentimeters(int meters)
         {
-            return meters * 100;
+            return meters * 1000;
         }
 
         private double centimetersToInches(int centimeters)
@@ -55,9 +55,9 @@ namespace English_To_Metric
             return feet / 3;
         }
 
-        private int yardsToFeet(int yards)
+        private int yardsToMiles(int yards)
         {
-            return yards / 5280;
+            return yards / 1760;
         }
 
         public string getInches()

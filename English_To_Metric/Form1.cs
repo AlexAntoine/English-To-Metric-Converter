@@ -96,5 +96,10 @@ namespace English_To_Metric
         {
 
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
