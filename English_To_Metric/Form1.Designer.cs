@@ -93,7 +93,7 @@
             // lblInches
             // 
             this.lblInches.AutoSize = true;
-            this.lblInches.Location = new System.Drawing.Point(295, 131);
+            this.lblInches.Location = new System.Drawing.Point(295, 145);
             this.lblInches.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInches.Name = "lblInches";
             this.lblInches.Size = new System.Drawing.Size(66, 24);
@@ -144,11 +144,11 @@
             // 
             // txtInches
             // 
-            this.txtInches.Location = new System.Drawing.Point(281, 157);
+            this.txtInches.Location = new System.Drawing.Point(265, 171);
             this.txtInches.Margin = new System.Windows.Forms.Padding(2);
             this.txtInches.Multiline = true;
             this.txtInches.Name = "txtInches";
-            this.txtInches.Size = new System.Drawing.Size(98, 29);
+            this.txtInches.Size = new System.Drawing.Size(127, 29);
             this.txtInches.TabIndex = 3;
             this.txtInches.TextChanged += new System.EventHandler(this.txtInches_TextChanged);
             // 
