@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace English_To_Metric
 {
-    class MetricToEnglish
+    class MetricToEnglish : Rounding
     {
         private double _inches;
         private int _yards;
@@ -30,19 +30,19 @@ namespace English_To_Metric
 
         private int kilometersToMeters(int kilometers)
         {
-            return kilometers * 100;
+            return kilometers * 1000;
         }
 
         private int metersToCentimeters(int meters)
         {
-            return meters * 1000;
+            return meters * 100;
         }
 
         private double centimetersToInches(int centimeters)
         {
-            double totalCentimeter = centimeters / 2.54;
-
-            return double.Parse(totalCentimeter.ToString("#.##"));
+           double totalCentimeter = centimeters / 2.54;
+       
+           return Round(totalCentimeter);
         }
 
         private int inchesToFeet(double inches)
