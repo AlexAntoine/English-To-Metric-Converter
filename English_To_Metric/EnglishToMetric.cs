@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace English_To_Metric
 {
-    class EnglishToMetric
+    class EnglishToMetric: Rounding
     {
         private double _centimeters;
         private int _meters;
